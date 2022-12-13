@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link href="./StyleSheet.css" rel="StyleSheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mende+Kikakui&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body id = "body">
+    <div id = "BG">𞡥𞠖𞢻𞠢𞠮𞠣 𞢣𞠽 𞡅 𞡄 𞠺 𞡈 𞡗 𞢰𞠎 𞡔 𞡪 𞡅𞠧 𞡄 𞡥𞢻𞠤 𞡖𞠢 𞠄𞠦 𞡄 𞠼𞣀 𞠕𞠣 𞡬𞠊𞢂 𞠀𞠢𞡔 𞠄𞠦 𞡨𞢯𞠸𞠣𞡪 𞡽𞠨𞠷 𞠣 𞡗𞠼 𞡄 𞡪𞡣 𞡛𞡇 𞠕𞡰𞡽 𞡄 𞡄 𞣄𞣄𞡪 𞡭𞠢 𞠀𞠣 𞢱𞠥𞢄𞠣.𞡥𞠖𞢻𞠢𞠮𞠣 𞢣𞠽 𞡅 𞡄 𞠺 𞡈 𞡗 𞢰𞠎 𞡔 𞡅𞠧 𞡄 𞡥𞢻𞠤 𞡖𞠢 𞠄𞠦 𞡄 𞠼𞣀 𞠕𞠣 𞡬𞠊𞢂. 𞠀𞠢𞡔 𞠄𞠦 𞡨𞢯𞠸𞠣𞡪 𞡽𞠨𞠷 𞠣 𞡗𞠼 𞡄 𞡪𞡣 𞡛𞡇 𞠕𞡰𞡽 𞡄 𞡄 𞣄𞣄𞡪 𞡭𞠢 𞠀𞠣 𞢱𞠥𞢄𞠣 𞡥𞠖𞢻𞠢𞠮𞠣 𞡥𞠖𞢻𞠢𞠮𞠣 𞡥𞠖𞢻𞠢𞠮𞠣 𞢣𞠽 𞡅 𞡄 𞠺 𞡈 𞡗 𞢰𞠎 𞡔 𞡪 𞡅𞠧 𞡄 𞡥𞢻𞠤 𞡖𞠢 𞠄𞠦 𞡄 𞠼𞣀 𞠕𞠣 𞡬𞠊𞢂 𞠀𞠢𞡔 𞠄𞠦 𞡨𞢯𞠸𞠣𞡪 𞡽𞠨𞠷 𞠣 𞡗𞠼 𞡄 𞡪𞡣 𞡛𞡇 𞠕𞡰𞡽 𞡄 𞡄 𞣄𞣄𞡪 𞡭𞠢 𞠀𞠣 𞢱𞠥𞢄𞠣 𞡥𞠖𞢻𞠢𞠮𞠣 𞢣𞠽 𞡅 𞡄 𞠺 𞡈𞡗𞢰𞠎 𞡔 𞡪 𞡅𞠧 𞡄 𞡥𞢻𞠤 𞡽𞠨𞠷 𞠣 𞡗𞠼 𞡄 𞡖𞠢 𞠄𞠦 𞡄 𞠼𞣀 𞠕𞠣 𞡬𞠊𞢂 𞠀𞠢𞡔 𞠄𞠦 𞡨𞢯𞠸𞠣𞡪 𞡽𞠨𞠷 𞠣 𞡗𞡪𞡣 𞡛𞡇 𞠕𞡰𞡽 𞡄 𞡄 𞣄𞡨𞢯𞠸𞠣𞡪 𞡥𞠖𞢻𞠢𞠮𞠣 𞡨𞢯𞠸𞠣𞡪 𞡥𞠖𞢻𞠢𞠮𞣄𞡪 𞡭𞠢 𞠀𞠣 𞢱𞠥𞢄𞠣.
+        𞡥𞠖𞢻𞠢𞠮𞠣 𞢣𞠽 𞡅 𞡄 𞠺 𞡈 𞡗 𞢰𞠎 𞡔 𞡪 𞡅𞠧 𞡄 𞡥𞢻𞠤 𞡖𞠢 𞠄𞠦 𞡄 𞠼𞣀 𞠕𞠣 𞡬𞠊𞢂 𞠀𞠢𞡔 𞠄𞠦 𞡨𞢯𞠸𞠣𞡪 𞡽𞠨𞠷 𞠣 𞡗𞠼 𞡄 𞡪𞡣 𞡛𞡇 𞠕𞡰𞡽 𞡄 𞡄 𞣄𞣄𞡪 𞡭𞠢 𞠀𞠣 𞢱𞠥𞢄𞠣 𞡥𞠖𞢻𞠢𞠮𞠣 𞢣𞠽 𞡅 𞡄 𞠺 𞡈 𞡗 𞢰𞠎 𞡔 𞡪 𞡅𞠧 𞡄 𞡥𞢻𞠤 𞡖𞠢 𞠄𞠦 𞡄 𞠼𞣀 𞠕𞠣 𞡬𞠊𞢂 𞠀𞠢𞡔 𞠄𞡨𞢯𞠸𞠣𞡪 𞡥𞠖𞢻𞠢𞠮𞠣 𞡨𞢯𞠸𞠣𞡪 𞡥𞠖𞢻𞠢𞠮𞠣 𞠦 𞡨𞢯𞠸𞠣𞡪 𞡽𞠨𞠷 𞠣 𞡗𞠼 𞡄 𞡪𞡣 𞡛𞡇 𞠕𞡰𞡽 𞡄 𞡄 𞣄𞣄𞡪 𞡭𞠢 𞠀𞠣 𞢱𞠥𞢄𞠣𞠕𞠣 𞡬𞠊𞢂 𞠀𞠢𞡔 𞠄𞠦 𞡨𞢯𞠸𞠣𞡪 𞡥𞠖𞢻𞠢𞠮𞠣 𞢣𞠽𞡅𞡄 𞠺𞡈𞡗 𞢰𞠎𞡔𞡪 𞡅𞠧 𞡄 𞡥𞢻𞠤𞡖𞠢𞠄𞠦𞡄𞠼𞣀 𞠕𞠣    </div>
+    <div id = "wrap">
+    <audio id = "audio">
+        <source src = "Funny Music.mp3"> 
+    </audio>
+        <h1 id = "quiz">
+            Quiz Time
+        </h1>
+        <div id = "result"></div>   
+        <a href = "#quiz" id = "restart" onclick = "restart()">Retry?</a>
+        <form>
+        <h2 class = "question">What is the main purpose of CSS in HTML5?</h2>        
+        <fieldset class = "field">
+            <label for = "a1">A</label>
+            <input type = "radio" name = "que1" id = "a1" value = "no">
+            <label for = "a1">CSS is used for scripting on an HTML web Page.</label>
+            <hr>
+            <label for = "b1">B</label>
+            <input type = "radio" name = "que1" id = "b1" value = "no">
+            <label for = "b1">CSS is used to define content on a page.</label>
+            <hr>
+            <label for = "c1">C</label>
+            <input type = "radio" name = "que1" id = "c1" value = "yes">
+            <label for = "c1">CSS is used to determine style, positioning, and layout of a page.</label>
+            <hr>
+            <label for = "d1">D</label>
+            <input type = "radio" name = "que1" id = "d1" value = "no">
+            <label for = "d1">None of these</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question">Which two statments are true about positioning floating elements? (Chose Two)
+        </h2>        
+        <fieldset class = "field">
+            <label for = "a2">A</label>
+            <input type = "checkbox" name = "que2" id = "a2" value = "no">
+            <label for = "a2">The element is positioned relative to the upper-left corner of the browser</label>
+            <hr>
+            <label for = "b2">B</label>
+            <input type = "checkbox" name = "que2" id = "b2" value = "no">
+            <label for = "b2">The element is positioned relative to the upper-left corner of the open window</label>
+            <hr>
+            <label for = "c2">C</label>
+            <input type = "checkbox" name = "que2" id = "c2" value = "yes">
+            <label for = "c2">The element can float right or left</label>
+            <hr>
+            <label for = "d2">D</label>
+            <input type = "checkbox" name = "que2" id = "d2" value = "yes">
+            <label for = "d2">The element is positioned relative to its parent element</label>
+            <hr>
+            <label for = "d2">E</label>
+            <input type = "checkbox" name = "que2" id = "d2" value = "yes">
+            <label for = "d2">The element can float up or down</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question"> You want to create a CSS style that will modify the strong
+            <br>
+            tag to apply blue color and add 60% transparency. Which of the following
+            <br>
+            code fragments do this?
+        </h2>
+        <fieldset class = "field">
+            <label for = "a3">A</label>
+            <input type = "radio" name = "que3" id = "a3" value = "yes">
+            <label for = "3">strong { color: rgba(0,0,255, 0.40); }</label>
+            <hr>
+            <label for = "b3">B</label>
+            <input type = "radio" name = "que3" id = "b3" value = "no">
+            <label for = "b3">strong { color: #0000ff, 60%; }</label>
+            <hr>
+            <label for = "c3">C</label>
+            <input type = "radio" name = "que3" id = "c3" value = "no">
+            <label for = "c3">strong { color: rgba(0,0,255,60); }</label>
+            <hr>
+            <label for = "d3">D</label>
+            <input type = "radio" name = "que3" id = "d3" value = "no">
+            <label for = "d3">strong { color: rgba(0%,0%,100%,40%); }</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question">Which is true about absolute positioning?</h2>
+        <fieldset class = "field">
+            <label for = "a4">A</label>
+            <input type = "radio" name = "que4" id = "a4" value = "no">
+            <label for = "a4">The element is positioned relative to the upper-left corner of the computer display window</label>
+            <hr>
+            <label for = "b4">B</label>
+            <input type = "radio" name = "que4" id = "b4" value = "no">
+            <label for = "b4">The element can float right or left</label>
+            <hr>
+            <label for = "c4">C</label>
+            <input type = "radio" name = "que4" id = "c4" value = "no">
+            <label for = "c4">The element is positioned relative to its parent element</label>
+            <hr>
+            <label for = "d4">D</label>
+            <input type = "radio" name = "que4" id = "d4" value = "yes">
+            <label for = "d4">The element is positioned relative to the upper-left corner of the browser</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question">What is the syntax for a CSS comment?</h2>
+            <fieldset class = "field">
+            <label for = "a5">A</label>
+            <input type = "radio" name = "que5" id = "a5" value = "no">
+            <label for = "a5">// Comment Goes Here</label>
+            <hr>
+            <label for = "b5">B</label>
+            <input type = "radio" name = "que5" id = "b5" value = "yes">
+            <label for = "b5">/* Comment Goes Here */</label>
+            
+            <hr>
+            <label for = "c5">C</label>
+            <input type = "radio" name = "que5" id = "c5" value = "no">
+            <label for = "c5" id = "c5label"></label>
+            <hr>
+            <label for = "d5">D</label>
+            <input type = "radio" name = "que5" id = "d5" value = "no">
+            <label for = "d5"># Comment Goes Here #</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question">How does the new Flexible Box Model eliminate the need for float?</h2>
+            <fieldset class = "field">
+            <label for = "a6">A</label>
+            <input type = "radio" name = "que6" id = "a6" value = "yes">
+            <label for = "a6">By providing a container positioned by properties assigned</label>
+            <hr>
+            <label for = "b6">B</label>
+            <input type = "radio" name = "que6" id = "b6" value = "no">
+            <label for = "b6">By allowing the browser to position the objects</label>
+            <hr>
+            <label for = "c6">C</label>
+            <input type = "radio" name = "que6" id = "c6" value = "no">
+            <label for = "c6">By positioning all objects at the coordinates 0,0</label>
+            <hr>
+            <label for = "d6">D</label>
+            <input type = "radio" name = "que6" id = "d6" value = "no">
+            <label for = "d6">By positioning all objects at the coordinates 0,0</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question">Which CSS style positions an element relitive to trhe browser window</h2>
+        <fieldset class = "field">
+            <label for = "a7">A</label>
+            <input type = "radio" name = "que7" id = "a7" value = "no">
+            <label for = "a7">position: static;</label>
+            <hr>
+            <label for = "b7">B</label>
+            <input type = "radio" name = "que7" id = "b7" value = "no">
+            <label for = "b7">position: absolute;</label>
+            <hr>
+            <label for = "c7">C</label>
+            <input type = "radio" name = "que7" id = "c7" value = "no">
+            <label for = "c7">position: relative;</label>
+            <hr>
+            <label for = "d7">D</label>
+            <input type = "radio" name = "que7" id = "d7" value = "yes">
+            <label for = "d7">position: fixed;</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question">What is the purpose of of the flexbox property in CSS</h2>
+        <fieldset class = "field">
+            <label for = "a8">A</label>
+            <input type = "radio" name = "que8" id = "a8" value = "no">
+            <label for = "a8">To display an element as a flexbox, allowing the user to drag the edges of the box in and out to change its size.</label>
+            <hr>
+            <label for = "b8">B</label>
+            <input type = "radio" name = "que8" id = "b8" value = "yes">
+            <label for = "b8">To display an element as a flexbox, allowing its size and position to adjust with the size of the viewport.</label>
+            <hr>
+            <label for = "c8">C</label>
+            <input type = "radio" name = "que8" id = "c8" value = "no">
+            <label for = "c8">To display an element as a flexbox, allow it to be moved dynamically to any position on the page with very little additional code.</label>
+            <hr>
+            <label for = "d8">D</label>
+            <input type = "radio" name = "que8" id = "d8" value = "no">
+            <label for = "d8">To display an element as a flexbox, allowing the content of a paragraph element to wrap around adjacent images.</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question">Which box model establishes content alignment, direction and orentation?</h2>
+        <fieldset class = "field">
+            <label for = "a9">A</label>
+            <input type = "radio" name = "que9" id = "a9" value = "yes">
+            <label for = "a9">Flexible Box Model</label>
+            <hr>
+            <label for = "b9">B</label>
+            <input type = "radio" name = "que9" id = "b9" value = "no">
+            <label for = "b9">Fixed Box Model</label>
+            <hr>
+            <label for = "c9">C</label>
+            <input type = "radio" name = "que9" id = "c9" value = "no">
+            <label for = "c9">Parent Box Model</label>
+            <hr>
+            <label for = "d9">D</label>
+            <input type = "radio" name = "que9" id = "d9" value = "no">
+            <label for = "d9">Inheritance Box Model</label>
+        </fieldset>
+        <br>
+        <br>
+        <h2 class = "question">Which is the correct method to define a block element as a grid?</h2>
+        <fieldset class = "field">
+            <label for = "a10">A</label>
+            <input type = "radio" name = "que10" id = "a10" value = "no">
+            <label for = "a10">grid: true;</label>
+            <hr>
+            <label for = "b10">B</label>
+            <input type = "radio" name = "que10" id = "b10" value = "yes">
+            <label for = "b10">display: grid;</label>
+            <hr>
+            <label for = "c10">C</label>
+            <input type = "radio" name = "que10" id = "c10" value = "no">
+            <label for = "c10">show: grid;</label>
+            <hr>
+            <label for = "d10">D</label>
+            <input type = "radio" name = "que10" id = "d10" value = "no">
+            <label for = "d10">None of these</label>
+        </fieldset>
+        <br>
+        <a href = "#wrap">
+            <input type = "button" value = "Submit" onclick = "check(); press(); play()" id = "submit"></input>
+        </a>
+    </form>
+</div>
+<script src = "javascript.js"></script>
+
+</body>
+</html>
